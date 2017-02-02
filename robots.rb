@@ -4,11 +4,8 @@ class Robot
   attr_accessor :name, :say_hi, :say_name, :height
 
   def initialize
-    @name = :name
+    @name = name
     @height = 10
-    rescue exception
-      puts "ERRRORRR! #{exception}"
-
   end
 
   def say_hi
@@ -24,7 +21,7 @@ class Robot
   end
 
   def method_missing(methd)
-    puts "ERRRORRR! HUMAN DETECTED!! '#{methd}' attempted!  "
+    puts "ERRRORRR! HUMAN DETECTED!! '#{methd}' attempted!"
   end
 end
 
@@ -62,7 +59,7 @@ borg = biofacture(flesh_herd)
 puts "\n\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#"
 puts "\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\n\n"
 
-puts "Try 'borg[0].say_name'. Result: #{borg[0].say_name}\n\n"
+puts "Try 'borg[0].say_name' and borg[0].class. Result: #{borg[0].say_name} and I'm a #{borg[0].class}!\n\n"
 
 puts "\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#"
 puts "\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\#\n"
